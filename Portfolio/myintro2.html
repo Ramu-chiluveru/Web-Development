@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ramu-chiluveru</title>
+    <link rel="shortcut icon" href="img4.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Profile</a>
+                    </li>
+                    <li>
+                        <a class="active" href="myIntro.html">My Intro</a>
+                    </li>
+                    <li>
+                        <a   href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a   href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="side-container">
+                <div class="column education" onclick="showContent('education')">Education</div>
+                <div class="column skills" onclick="showContent('skills')">Skills</div>
+                <div class="column achievements" onclick="showContent('achievements')">Achievements</div>
+            </div>
+            <div class="content">
+                <div id="education-content" class="content">
+                    <h2>Education</h2>
+                    <!-- Education content goes here -->
+                    <p>Your educational background information goes here.</p>
+                  </div>
+                  <div id="skills-content" class="content">
+                    <h2>Skills</h2>
+                    <!-- Skills content goes here -->
+                    <ul>
+                      <li>Skill 1</li>
+                      <li>Skill 2</li>
+                      <li>Skill 3</li>
+                      <!-- Add more skills as needed -->
+                    </ul>
+                  </div>
+                  <div id="achievements-content" class="content">
+                    <h2>Achievements</h2>
+                    <!-- Achievements content goes here -->
+                    <ul>
+                      <li>Achievement 1</li>
+                      <li>Achievement 2</li>
+                      <li>Achievement 3</li>
+                      <!-- Add more achievements as needed -->
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <script>
+        function showContent(contentType) {
+          // Hide all content sections
+          const allContent = document.querySelectorAll('.content');
+          allContent.forEach((content) => {
+            content.style.display = 'none';
+          });
+    
+          // Show the selected content
+          const selectedContent = document.getElementById(`${contentType}-content`);
+          selectedContent.style.display = 'block';
+        }
+      </script>
+</body>
+</html>

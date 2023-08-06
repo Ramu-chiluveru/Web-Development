@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ramu-chiluveru</title>
+    <link rel="shortcut icon" href="img4.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showContent(contentType) {
+        // Hide all content sections
+            const allContent = document.querySelectorAll('.content');
+            allContent.forEach((content) => {
+            content.style.display = 'none';
+        });
+
+        // Show the selected content
+        const selectedContent = document.getElementById(`${contentType}-content`);
+        selectedContent.style.display = 'block';
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Profile</a>
+                    </li>
+                    <li>
+                        <a class="active" href="myIntro.html">My Intro</a>
+                    </li>
+                    <li>
+                        <a   href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a   href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="side-container">
+                <div class="column education" onclick="showContent('education')">Education</div>
+                <div class="column skills" onclick="showContent('skills')">Skills</div>
+                <div class="column achievements" onclick="showContent('achievements')">Achievements</div>
+                <div class="column hobbies" onclick="showContent('hobbies')">hobbies</div>
+            </div>
+        
+
+            <div class="content-section">
+                <div id="education-content" class="content">
+                    <h2>Education</h2>
+                    <table>
+                        <th>QUALIFICATION</th>
+                        <th>INSTITUTION</th>
+                        <th>GRADE</th>
+                        <th>YEAR</th>
+
+                        <tr>
+                            <td>BTECH</td>
+                            <td>Rgukt Basar</td>
+                            <td>9.54</td>
+                            <td>2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>PUC</td>
+                            <td>Rgukt Basar</td>
+                            <td>9.54</td>
+                            <td>2022</td>
+                        </tr>
+
+                        <tr>
+                            <td>SSC</td>
+                            <td>TS ModelSchool</td>
+                            <td>10</td>
+                            <td>2020</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div id="skills-content" class="content">
+                    <h2>Skills</h2>
+                    <!-- Skills content goes here -->
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Front-End</li>
+                        <li>Kotlin</li>
+                        <li>DSA & OOPS</li>
+                    </ul>
+                </div>
+                <div id="achievements-content" class="content">
+                    <h2>Achievements</h2>
+                    <!-- Achievements content goes here -->
+                    <ul>
+                        <li>500+ Problems on leetcode</li>
+                        <li>Code-club Co-ordinator</li>
+                        <li>Air 87</li>
+                        <!-- Add more achievements as needed -->
+                    </ul>
+                </div>
+
+                <div id="hobbies-content" class="content">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Participating in coding contests</li>
+                        <li>Reading Books</li>
+                        <li>Badminton</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

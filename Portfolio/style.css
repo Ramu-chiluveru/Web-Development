@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald:wght@500&family=Raleway&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-color:#0f172a;
+}
+
+.container ul li a{
+    text-decoration: none;
+}
+
+.sidebar ul a{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 35px;
+    list-style-type: none;
+    line-height: 43px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+    font-size: 20px;
+    color: #eef3db;
+    font-weight: bold;
+    transition-property: color;
+    cursor: pointer;
+}
+
+.sidebar{
+    /* background-color: rgb(59, 75, 154); */
+    background-color: #182234;
+    position: absolute;
+    width: 15vw;
+    height:100vh ;
+}
+
+.sidebar ul a:hover,
+.sidebar ul a.active{
+    transition-delay: 2ms;
+    color:#0099ff;
+}
+
+.sidebar ul a.active{
+    transition-delay: 2ms;
+    color:#fff;
+    background-size: 10px 10px;
+    text-shadow: #0f172a;
+    padding: 10px;
+    background-color:#1F80EE;
+    border-radius: 20px;
+}
+
+
+.sidebar nav{
+    margin-top: 150px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 70vw;
+    height: 80vh;
+}
+
+.info .text{
+    color:#eef3db;;
+    margin-right: 50px;
+    line-height: 50px;
+}
+
+h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+p{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#name{
+    font-size: 60px;
+}
+
+/* animation */
+#name {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    /* padding: 20px; */
+    white-space: nowrap; /* Prevent line breaks between letters */
+    overflow: hidden; /* Hide overflow to avoid scrolling */
+  }
+  
+
+#Skilled{
+    color: yellow;
+    margin-top: 4px;
+    font-size: 22px;
+}
+#lang{
+    color: #0099ff;
+
+    font-size: 23px;
+    font-weight: 10px;
+}
+
+.animi{
+    display: flex;
+}
+
+#element{
+    margin-left: 20px;
+    font-size: 30px;
+    color: #0099ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img{
+    border-radius: 200px;
+}
+
+.btn{
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #1f80ee;
+    /* border-color: #1F80EE; */
+    color: #fff;
+    border-color: #1F80EE;
+    font-weight: 50px;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    height: 8vh;
+    width: 12vw;
+    text-align: center;
+    padding: 12px 28px;
+    font-weight: 700;
+    box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color:#1f80ee;
+    /* border-color: #1F80EE; */
+    border-color: #eef3db;
+}
+
+/* my intro */
+.main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .side-container{
+    margin-top: 50px;
+    margin-left: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.main .side-container .column{
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #1F80EE;
+    margin-left: 60px;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main .side-container .column:hover,
+.main .side-container .column.active{
+    background-color: #1F80EE;
+}
+.main .content-section{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 450px;
+    /* border: 1px solid #1f80ee;
+    border-radius: 10px; */
+    width: 550px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content-section{
+    display: flex;
+}
+
+.main .content-section .content{
+    color: #fff;
+}
+
+.content-section h2{
+    color: red;
+    font-size: 50px;
+    text-shadow: #0f172a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content-section #education-content table  th
+{
+    color: yellow;
+}
+
+.content-section #education-content table , th,td{
+    border: 1px solid #a7b0be;
+    padding: 15px;
+}
+
+.content-section #skills-content,#achievements-content,#hobbies-content{
+    font-size: 20px;
+    margin-bottom: 120px;
+    margin-right: 100px;
+}
+
+.content-section #skills-content ul,#achievements-content ul,#hobbies-content ul{
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* contactform */
+.About{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.About h3{
+    color: #eef3db;
+    font-size: 50px;
+    text-shadow: #0f172a;
+}
+
+form{
+    color: #eef3db;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #1f80ee;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Adjust the width as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="email"]{
+    width: 113%;
+}
+
+.email{
+    margin-right: 23px;
+}
+
+.msg{
+    margin-right: 4px;
+}
+textarea {
+    width: 105%; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    padding: 10px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+footer p{
+    color: #eef3db;
+    font-size: 15px;
+    margin-top: 50PX;
+    margin-left: 570px;
+}
+

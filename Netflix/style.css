@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald:wght@500&family=Raleway&family=Roboto:wght@500&display=swap');
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* navigaton bar */
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+body
+{
+    background-color: black;
+    color: white;
+    font-family:"poppins",sans-serif;
+}
+
+/* netflix logo in the nav bar */
+.navbar-netflix{
+    width: 135px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar-items{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navbar-logo
+{
+    width: 130%;
+}
+
+/* languages dropdown box  */
+.lang-drop-down{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown-container{
+    border: 1px solid white;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.4);
+    padding: 0.4rem;
+}
+
+.signin-btn{
+    border: 1px solid #dc030f;
+    padding: 0.4rem;
+    border-radius: 3px;
+    background-color:#dc030f;
+    color: white;
+    height: 33px;
+    width: 65px;
+    font-weight: 530;
+    cursor: pointer;
+}
+
+/* hero-background section */
+.bg-hero{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-card{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 45%;
+    gap: 15px;
+    left: 15%;
+    flex-direction: column;
+}
+
+.hero-title{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.hero-subtitle,.hero-description{
+    font-weight: 400;
+}
+
+.hero-items{
+    display: flex;
+    position: absolute;
+    gap: 5px;
+    top: 120%;
+    left: 20%;
+}
+
+.hero-email{
+    width: 430px;
+    height: 50px;
+    padding: 2px;
+    padding-left: 18px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.hero-getstart-btn{
+    width: 140px;
+    height: 50px;
+    background:#dc030f;
+    color: white;
+    border: 1px solid #dc030f;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 530;
+}
+
+.hero-getstart-btn:hover{
+    opacity: 85%;
+}
+
+
+/* cards-section */
+.card1,
+.card2,
+.card3,
+.card4{
+    border-top: 8px solid rgb(69,69,69);
+    padding: 50px;
+}
+
+.card1,
+.card3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1{
+    padding-left: 80px;
+}
+
+.card2 .desc-2,
+.card4 .desc-4{
+    padding-top: 120px;
+}
+
+.card1 video{
+    position: relative;
+    left: 82px;
+    bottom: 5px;
+    width: 100%;
+    height: 54%;
+    grid-column: 3/2;
+    grid-row: 1/2;
+    z-index: -1;
+
+}
+
+.card1 img,
+.card3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card3 video{
+    position: relative;
+    left: 80px;
+    bottom: 90px;
+    width: 100%;
+    height: 45%;
+    grid-column: 3/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card3 .desc-3{
+    padding-left: 80px;
+}
+.style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+
+.card2,
+.card4{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* footer */
+
+.footer{
+    border-top: 8px solid rgb(69,69,69);
+    padding:80px;
+}
+.footer p{
+    color: #999;
+    margin-left: 140px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer p #tel{
+    text-decoration-line: underline;
+}
+.footer .footer-cols ul,
+.footer .footer-cols ul a{
+    text-decoration: none;
+    text-decoration-line: underline;
+    list-style-type: none;
+    color: #999;
+    line-height: 30px;
+}
+
+.footer .footer-cols{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.netflix-india{
+    color: #999;
+    padding-top: 20px;
+    padding-left: 0%;
+}
+
+
+
